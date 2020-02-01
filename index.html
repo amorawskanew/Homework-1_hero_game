@@ -18,12 +18,32 @@
     />
 
     <img id="bag" onclick="equipWeapon(hero)" src="images/bag.png" alt="" />
+    <img id="enemy" onclick="equipWeapon(hero)" src="images/enemy.jpg" alt="" />
+    <br />
+    <br />
+    <br />
 
-    <h1 id="name"></h1>
-    <h1 id="health"></h1>
-    <h1 id="weapon_type"></h1>
-    <h1 id="weapon_damage"></h1>
-
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">NAME</th>
+          <th scope="col">HEALTH</th>
+          <th scope="col">WEAPON TYPE</th>
+          <th scope="col">WEAPON DAMAGE</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td id="name"></td>
+          <td id="health"></td>
+          <td id="weapon_type"></td>
+          <td id="weapon_damage"></td>
+        </tr>
+      </tbody>
+    </table>
+    <br /><br />
+    <button type="button" onclick="openWindow()">Change hero's name</button>
+    <br /><br /><br />
     <!-- I RECOMMEND YOU LEAVE THE REST UNTOUCHED -->
     <button onclick="mocha.checkLeaks(); mocha.run();">Run the tests!</button>
 

@@ -45,7 +45,18 @@ function displayStats() {
 }
 
 //section 4
+function openWindow() {
+  hero.name = window.prompt("Enter hero's name", hero.name);
+}
 
-hero.name = window.prompt("Enter hero's name", hero.name);
+document.getElementById("enemy").addEventListener("click", deleteEnemy);
+function deleteEnemy() {
+  document.getElementById("enemy").remove();
+}
+
+document.getElementById("dagger").addEventListener("click", deleteDagger);
+function deleteDagger() {
+  document.getElementById("dagger").remove();
+}
 
 displayStats();
